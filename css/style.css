@@ -190,3 +190,16 @@ ul.todo#completed{
 	margin-top: 100px;
 	
 }
+ul.todo#todo::empty::after{
+	content: 'You have noting to-do';
+}
+ul.todo#completed::empty::after{
+	content:'you have yet to complete task';
+}
+ul.todo#completed::after,ul.todo#todo::after{
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	color: #000;
+}
