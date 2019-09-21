@@ -190,6 +190,7 @@ ul.todo#completed{
 	margin-top: 100px;
 	
 }
+/*
 ul.todo#todo::empty::after{
 	content: 'You have noting to-do';
 }
@@ -202,4 +203,4 @@ ul.todo#completed::after,ul.todo#todo::after{
 	text-align: center;
 	font-size: 16px;
 	color: #000;
-}
+}*/
