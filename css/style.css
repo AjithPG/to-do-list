@@ -49,8 +49,9 @@ header input {
 header input::-webkit-input-placeholder {
 	color: rgb(255, 255, 255, 0.75);
 }
-.noFill{
-	fill:none;
+
+.noFill {
+	fill: none;
 }
 
 #add {
@@ -84,28 +85,30 @@ header button svg {
 	box-sizing: border-box;
 }
 
-#todo{
+#todo {
 	width: 100%;
 	float: left;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-#completed{
-		width: 100%;
+
+#completed {
+	width: 100%;
 	float: left;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	
+
 }
+
 li {
 	width: 100%;
 	float: left;
 	min-height: 50px;
 	font-size: 14px;
 	font-weight: 400;
-	color:#444;
+	color: #444;
 	line-height: 22px;
 	box-shadow: 0px 2px 4px rgb(44, 62, 80, 0.15);
 	background: #fff;
@@ -128,7 +131,8 @@ li:last-of-type {
 	top: 0;
 	right: 0;
 }
-button{
+
+button {
 	width: 50px;
 	height: 50px;
 	float: left;
@@ -138,58 +142,76 @@ button{
 	box-shadow: none;
 	padding: 0;
 }
- button:last-of-type:before{
+
+button:last-of-type:before {
 	content: '';
 	width: 1px;
 	height: 30px;
 	top: 10px;
-	left:0px;
-	background:#edf0f1;
+	left: 0px;
+	background: #edf0f1;
 }
-svg{
+
+svg {
 	width: 22px;
 	height: 22px;
 	position: absolute;
 	margin: -11px 0 0 -11px;
 }
-.fill{
-	fill:#c0cecb;
+
+.fill {
+	fill: #c0cecb;
 }
-.fill{
-	transition:fill 0.2s ease;
+
+.fill {
+	transition: fill 0.2s ease;
 }
-.remove:hover svg .fill{
-	fill:#e85656;
+
+.remove:hover svg .fill {
+	fill: #e85656;
 }
 
 .complete svg {
 	border: 1.5px solid #25b99a;
 	border-radius: 11px;
 }
-.complete svg .fill{
-	fill:#25b99a;
+
+.complete svg .fill {
+	fill: #25b99a;
 }
 
-ul.todo#completed li .buttons button.complete svg{
-	background:#25b99a;
+ul.todo#completed li .buttons button.complete svg {
+	background: #25b99a;
 	border: 0px;
 	transition: background 0.2s ease;
 }
-ul.todo#completed li .buttons button.complete svg .fill{
+
+ul.todo#completed li .buttons button.complete svg .fill {
 	fill: #fff;
 }
 
-ul.todo:not{#complete} li .buttons button.complete:hover svg{
-	background:rgba(37,185,154,0.9);
+ul.todo:not {
+	#complete
 }
-ul.todo:not{#complete} li .buttons button.complete:hover svg .fill{
-	fill:#fff;
+
+li .buttons button.complete:hover svg {
+	background: rgba(37, 185, 154, 0.9);
 }
-ul.todo#completed{
+
+ul.todo:not {
+	#complete
+}
+
+li .buttons button.complete:hover svg .fill {
+	fill: #fff;
+}
+
+ul.todo#completed {
 	opacity: 0.5;
 	margin-top: 100px;
-	
+
 }
+
 /*
 ul.todo#todo::empty::after{
 	content: 'You have noting to-do';
